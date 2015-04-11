@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    <com.youku.player.base.YoukuPlayerView
+        android:id="@+id/full_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.youku.player.base.YoukuPlayerView>
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+           <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/biaoqing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="标清" />
+
+        <Button
+            android:id="@+id/gaoqing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="高清" />
+
+        <Button
+            android:id="@+id/chaoqing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="超清" />
+
+        <Button
+            android:id="@+id/most"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="1080p" />
+        
+        <Button
+            android:id="@+id/download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="下载" />  
+    </LinearLayout>
+        
+        
+    </ScrollView>
+
+ 
+
+</LinearLayout>

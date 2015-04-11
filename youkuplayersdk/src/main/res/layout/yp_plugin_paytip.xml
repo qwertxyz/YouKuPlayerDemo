@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:id="@+id/paytip_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/paytip_full_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/paytip_small_margin_bottom"
+        android:background="@drawable/yp_investigate_bg"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/paytip_close"
+            android:layout_width="@dimen/paytip_close_width"
+            android:layout_height="@dimen/paytip_close_height"
+            android:layout_centerVertical="true"
+            android:background="@drawable/yp_investigate_close" />
+
+        <TextView
+            android:id="@+id/paytip_bt"
+            android:layout_width="@dimen/paytip_full_tip_width"
+            android:layout_height="@dimen/paytip_close_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/paytip_close_margin"
+            android:layout_toRightOf="@id/paytip_close"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/paytip_full_textsize" />
+
+        <Button
+            android:id="@+id/paytip_arrow"
+            android:layout_width="@dimen/paytip_full_arrow_width"
+            android:layout_height="@dimen/paytip_close_height"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/paytip_bt"
+            android:background="@drawable/yp_investigate_arrow_right" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="@dimen/normal_dialog_width"
+   android:layout_height="wrap_content" 
+   android:background="@drawable/prompt_box" 
+   android:orientation="vertical">
+   
+     <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_dialog_message_marginTop"
+        android:text="TextView"
+        android:textAppearance="@style/dialog_msg"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/normal_dialog_btn_marginLeft"
+        android:paddingRight="@dimen/normal_dialog_btn_marginLeft"/>
+     
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_dialog_btn_marginTop"
+        android:layout_marginBottom="@dimen/normal_dialog_btn_marginBottom"
+        android:layout_marginLeft="@dimen/normal_dialog_btn_marginLeft" 
+        android:layout_marginRight="@dimen/normal_dialog_btn_marginLeft">
+
+       <Button
+            android:id="@+id/positive_btn"
+            android:layout_width="@dimen/normal_dialog_btn_width"
+            android:layout_height="@dimen/normal_dialog_btn_height"
+            android:textColor="#bf999999"
+            android:textSize="@dimen/text_size_j"
+            android:shadowColor="#e4ebed"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:background="@drawable/btn_grey"/>
+       
+       <Button
+            android:id="@+id/negtive_btn"
+            android:layout_width="@dimen/normal_dialog_btn_width"
+            android:layout_height="@dimen/normal_dialog_btn_height"
+            android:background="@drawable/btn_blue"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_size_j"
+            android:textColor="#ffffff"/>
+            
+    </RelativeLayout>
+    
+
+</LinearLayout>
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/normal_dialog_width"
+    android:layout_height="@dimen/normal_dialog_height"
+    android:background="@drawable/prompt_box" >
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/normal_dialog_message_marginTop"
+        android:text="TextView"
+        android:textAppearance="@style/dialog_msg"/>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/normal_dialog_btn_marginBottom"
+        android:layout_marginLeft="@dimen/normal_dialog_btn_marginLeft" 
+        android:layout_marginRight="@dimen/normal_dialog_btn_marginLeft">
+
+       <Button
+            android:id="@+id/positive_btn"
+            android:layout_width="@dimen/normal_dialog_btn_width"
+            android:layout_height="@dimen/normal_dialog_btn_height"
+            android:textColor="#bf999999"
+            android:textSize="@dimen/text_size_j"
+            android:shadowColor="#e4ebed"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:background="@drawable/btn_grey"/>
+       
+       <Button
+            android:id="@+id/negtive_btn"
+            android:layout_width="@dimen/normal_dialog_btn_width"
+            android:layout_height="@dimen/normal_dialog_btn_height"
+            android:background="@drawable/btn_blue"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_size_j"
+            android:textColor="#ffffff"/>
+            
+    </RelativeLayout>
+
+</RelativeLayout> -->

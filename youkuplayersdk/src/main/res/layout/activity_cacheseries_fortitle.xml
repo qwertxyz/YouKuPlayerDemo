@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/homepagetitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/subtitle_height"
+        android:background="#FFFFFF"
+        android:gravity="center" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/tab_shadow" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.youku.phone.detail.DetailTitleSeriesCacheFragment" />
+
+</LinearLayout>

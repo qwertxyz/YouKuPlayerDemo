@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liujy.youkuplayerdemo"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    <!-- 友盟sdk 需要 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 友盟sdk 需要 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 友盟sdk 需要 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 友盟sdk 需要 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" /-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+    <!-- <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/> -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 播放界面demo -->
+        <activity
+            android:name=".PlayerActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:exported="true">
+        </activity>
+        <!-- 已经缓存的视频界面demo -->
+        <activity
+            android:name=".CachedActivity"
+            android:launchMode="singleTask" />
+        <!-- 正在缓存的视频展示界面demo -->
+        <activity
+            android:name=".CachingActivity"
+            android:launchMode="singleTask" />
+        <!--&lt;!&ndash; 以下两个为下载时需要的添加的Service &ndash;&gt;
+        <service
+            android:name="com.youku.service.download.DownloadService"
+            android:label="Youku Download Service"
+            android:process=":download">
+            <intent-filter android:priority="1000">
+
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.youku.service.acc.AcceleraterService"
+            android:process=":accelerater">
+            <intent-filter android:priority="1000">
+
+            </intent-filter>
+        </service>-->
+
+
+        <!-- client_id及client_secret配置 -->
+        <meta-data
+            android:name="client_id"
+            android:value="db316bb37424f8a1" />
+        <meta-data
+            android:name="client_secret"
+            android:value="dbd667a0c145ee900dc279915b304b28" />
+    </application>
+
+</manifest>
